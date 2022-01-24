@@ -1,5 +1,7 @@
 # SEC335
+Notes
+------
 Week 1
 ------
-Chronilogical Journal
+Chronological Journal
 ------
