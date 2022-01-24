@@ -1,4 +1,5 @@
 # Activity 1.2 Passive Recon
+##### Group Members: Benji Eisen, Spencer Sumpman, Timothy Conklin, Gabe Quinto
 
 ### Who Is | grep @
 ![who is grep](https://user-images.githubusercontent.com/78443183/150873045-19d44e83-5c96-4501-9ac6-32ed5168a6cf.PNG)
