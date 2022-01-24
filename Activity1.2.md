@@ -17,3 +17,28 @@
 ### Web Archive Jan. 23, 2014
 ![wayback machine](https://user-images.githubusercontent.com/78443183/150873519-3429e40c-b3a2-4a37-8072-2c44fd3642cb.PNG)
 ------
+### PDF Search
+![pdf search](https://user-images.githubusercontent.com/78443183/150873604-fb6e29f4-ce3c-4b4c-86de-33ef1377dce2.PNG)
+------
+### Results from Harvester and Shodan
+|Emails|IPs|Hosts|
+|---|---|---|
+|ahayes@boltonvalley.com|104.21.36.102|autodiscover.boltonvalley.com:52.96.35.184, 52.96.15.184, 52.96.111.104, 52.96.183.40
+|boltonvalley@boltonvalley.com| 172.67.192.82|Blog.boltonvalley.com:142.251.35.179
+|info@boltonvalley.com|| Calendar.boltonvalley.com:142.251.35.179
+|jarneson@boltonvalley.com||Docs.boltonvalley.com:142.251.35.179
+|||Ecommerce.boltonvalley.com:69.54.27.53
+|||Hotel.boltonvalley.com:69.54.28.206
+|||Intranet.boltonvalley.com:142.251.35.179
+|||Irm.boltonvalley.com:69.54.27.55
+|||Lyncdiscover.boltonvalley.com:52.112.66.142
+|||Nordic.boltonvalley.com:142.251.35.179
+|||owa.boltonvalley.com:52.96.70.242, 52.96.179.226, 52.96.32.2, 52.96.9.2
+|||Sip.boltonvalley.com:52.112.65.27
+|||Snow.boltonvalley.com:74.208.19.30
+|||summer.boltonvalley.com:172.67.192.82, 104.21.36.102
+|||Terrainparks.boltonvalley.com:142.251.35.179
+|||url8011.email.boltonvalley.com:167.89.115.56, 167.89.123.124, 167.89.123.54, 167.89.115.120
+|||Webcam.boltonvalley.com:69.54.27.52
+|||winter.boltonvalley.com:104.21.36.102, 172.67.192.82
+|||www.boltonvalley.com:172.67.192.82, 104,21,36,102
