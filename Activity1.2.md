@@ -42,3 +42,6 @@
 |||Webcam.boltonvalley.com:69.54.27.52
 |||winter.boltonvalley.com:104.21.36.102, 172.67.192.82
 |||www.boltonvalley.com:172.67.192.82, 104,21,36,102
+------
+### Notes
+Bolton Valleys website is being hosted by Network Solutions which is a subsidiary of Web.com.  Bolton is owned by the DesLauriers family, Ralph DesLauries is Chairman of the board along with Lindsay, Evan, and Adam who are all possible social engineering targets. 
