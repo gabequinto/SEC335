@@ -7,3 +7,5 @@
 ### 1/24/2022 - Week 2
 ------
 * [Activity 2.1 Host Discover](https://github.com/gabequinto/SEC335/blob/main/Activity2.1.md)
+* [Lab 2.1 Port Scanning 1](https://github.com/gabequinto/SEC335/blob/main/Lab2.1.md)
+* [Lab 2.2 Port Scanning 2](https://github.com/gabequinto/SEC335/edit/main/Lab2.2.md)
