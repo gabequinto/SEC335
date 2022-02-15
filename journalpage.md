@@ -21,3 +21,11 @@ This week we were working a lot with Nmap and wireshark to view how ports behave
 ###### Week 3 notes
 ------
 This week we worked with DNS Enumeration and I learned a lot of useful commands and techniques. First I never knew that you can grep for an IP address with the command `grep -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'` and could theoretically grep for any combination of numbers with a variation of that command. As well I was unaware of the command `nmap -sL *network* --dns-servers *dnsserver*`. This is very useful for finding DNS servers and you are able to find the hostname along with the IP address. 
+
+### 2/7/2022 - Week 4
+------
+* [Activity 4.1 - Exploiting Cupcake](https://github.com/gabequinto/SEC335/blob/main/Activity4.1.md)
+
+###### Week 4 notes
+-------
+This week was the first week of working with actual exploits. We were tasked with using various exploits to attack a target server. We were able to remotely execute code as well as gain access to the target server and even gain root access. We used tools like Hydra and searchsploit, both of which I am very excited to learn more about. As well we continued using Nmap and I am beginning to realize just how important that tool really is. 
