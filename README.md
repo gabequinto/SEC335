@@ -4,11 +4,14 @@
 # Week 2
 * [Activity 2.1 Host Discover](https://github.com/gabequinto/SEC335/blob/main/Activity2.1.md)
 * [Lab 2.1 Port Scanning 1](https://github.com/gabequinto/SEC335/blob/main/Lab2.1.md)
-* [Lab 2.2 Port Scanning 2](https://github.com/gabequinto/SEC335/edit/main/Lab2.2.md)
+* [Lab 2.2 Port Scanning 2](https://github.com/gabequinto/SEC335/blob/main/Lab2.2.md)
 ------
 # Week 3
 * [Activity 3.1 DNS Enumeration](https://github.com/gabequinto/SEC335/blob/main/Activity3.1.md)
 ------
+# Week 4
+* [Activity 4.1 Exploiting Cupcake](https://github.com/gabequinto/SEC335/blob/main/Activity4.1.md)
+ ------
 # Chronological Journal
 * [journal](https://github.com/gabequinto/SEC335/blob/main/journalpage.md)
 
