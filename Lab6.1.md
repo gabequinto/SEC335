@@ -6,3 +6,4 @@ passwords and salt values from the users. We than used unshadow and John the Rip
 
 ### Reflection
 -----
+This lab was very fun and was the first time that I used unshadow, John, and Hashcat. I had a few issues with unshadow and John but they were both just errors involved with getting used to the syntax and commands. Other than that this lab wasn't all to challenging and I was able to get it done somewhat quickly. I would say that password generators and managers are pretty important. These password generators ensure that your password won't be on a wordlist and that is something that is very important. 
