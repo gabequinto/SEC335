@@ -10,7 +10,7 @@ This lab was very fun and was the first time that I used unshadow, John, and Has
 
 ### Format of /etc/shadow
 ------
-Understanding the format of the /etc/shadow file was something that was very important in this lab. For this lab we only focused on the username, encryption method, salt value, and hashed password. The 
+Understanding the format of the /etc/shadow file was something that was very important in this lab. For this lab we only focused on the username, encryption method, salt value, and hashed password. The first part of a shadow entry before the ':' is the username of the user this entry is for. The field between the two '$' defines which encryption method was used on this password. Following this the value between the next '$' is the salt value and the next value is the salt value and the hashed password. 
 
 ### John the Ripper
 ------
