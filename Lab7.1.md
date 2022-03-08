@@ -26,4 +26,11 @@ You will notice the last user 'peregrin.took'. This is the user that we will use
 
 ### Navigating MySQL Database
 -------
-On the target server a MySQL database was running and this held valuable information that we would use to gain root access. 
+On the target server, a MySQL database was running and this held valuable information that we would use to gain root access. As shown above, we already have the credentials and the database we are using for this. The first step was to SSH into the server and enter the mysql database. To do this first I used the command `ssh peregrin.took@10.0.5.25` and  the password '23tookie'. After this I used the command `mysql -u root -p` and when prompted for a password entered '23tookie`. Next it is time to navigate to the target database 'mediawiki'. To do this run the command `USE mediawiki;`. Now that we are in the database I ran the command `SELECT *  FROM user;` to get all of the user data. 
+
+![github lab 7 1 user data](https://user-images.githubusercontent.com/78443183/157299828-63eb424f-f557-49f1-9426-1441db80bd25.PNG)
+
+As you can see we have the user 'Pippin' which is the root user we are going after and the hashed password. 
+
+### Cracking the Root Password
+-------
