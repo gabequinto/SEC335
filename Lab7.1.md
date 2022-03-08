@@ -34,3 +34,16 @@ As you can see we have the user 'Pippin' which is the root user we are going aft
 
 ### Cracking the Root Password
 -------
+
+#### Prep
+To crack the root password I chose to use the application hashcat. I was already somewhat familiar with this application as we have had to use it in past labs. In order to crack a password using hashcat we need two things, the hashed password as well as a password list to run the hashed password against. Starting with the first item, the hashed password, it may seem like we already had that from the screenshot above. However, hashcat will not accept the format the hash is in right now. In the image below, the red hash is its current state and the hash you see printed from the file '1.txt' right above is the format that hashcat would accept. 
+![github lab 7 1 hashes](https://user-images.githubusercontent.com/78443183/157303910-82aec0c7-bea0-405b-a790-ed4c22b36444.PNG)
+
+Next, I needed a password list for hashcat to use. In this lab we were given the information that the password is in rockyou.txt, starts with a lowercase 's' and is based on a Lord of the Rings character. What I did was grep rockyou.txt for each character name in lotr that starts with 's'. I appened each output to a wordlist file that I would use when running the hashcat command. 
+#### Cracking
+Now that we have everything we need we can finally crack the root password. To do this I ran the command `hashcat -m12100 1.txt -w4 -a0 lab7.1.txt` with '1.txt' being the hashed password and 'lab7.1.txt' being the password list. The screenshot below is the output of this command. 
+![dev 9 1](https://user-images.githubusercontent.com/78443183/157305084-273b4ee2-a138-43cb-a128-fdee95017446.PNG)
+As you can see I have found the root password which is 'saruman24'. The screenshot below shows the confirmation that this was the correct password.   
+
+
+![dev 9](https://user-images.githubusercontent.com/78443183/157306730-93395e99-2c4b-4014-b343-9e550c9c186e.PNG)
