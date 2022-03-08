@@ -8,7 +8,7 @@ of the processes of this lab below.
 
 ### Reflection
 ------
-For this lab we were tasked with reflecting on mistakes made by this servers systems admin as well as where we looked at the hint videos for this lab.  Starting with the mistakes made, the main mistake is allow anonymous logon into the FTP server. This is the way we gained our foothold in the system as well as getting more credentials. If the systems admin had configured this FTP server to not allow anonymous logins than we would not have been able to attack this server in the first place. I did have to watch the first hint video just to get started as I didn't know that if an FTP was misconfigured you could login as an anonymous user. After this stage, I was able to do this lab completely with only the help of a little external research. 
+For this lab we were tasked with reflecting on mistakes made by this servers systems admin as well as where we looked at the hint videos for this lab.  Starting with the mistakes made, the main mistake is allow anonymous logon into the FTP service. This is the way we gained our foothold in the system as well as getting more credentials. If the systems admin had configured this FTP service to not allow anonymous logins than we would not have been able to attack this server in the first place. I did have to watch the first hint video just to get started as I didn't know that if an FTP was misconfigured you could login as an anonymous user. After this stage, I was able to do this lab completely with only the help of a little external research. 
 
 ### Gaining Initial Access
 ------
