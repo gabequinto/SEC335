@@ -7,6 +7,21 @@ centos box. After configuring all of these machines we had to configure a WireGu
 ------
 This was a very fun lab and the first time I had set up VM's in this manner. I have never configured VM's to be able to have connectivity to eachother, however I'm glad that we did this lab because it will be very helpful in the future. It will for sure pay off in the future to be able to do this for whatever the situation may call for. 
 
+### VyOS Configuration
+------
+    configure
+    set interfaces ethernet eth0 address '192.168.229.10/24'
+    set interfaces ethernet eth0 description 'Nat on VMware Host'
+    set interfaces ethernet eth1 address '10.0.5.2/24'
+    set interfaces ethernet eth1 description 'VMNET5-RANGE'
+    set protocols static route 0.0.0.0/0 next-hop 192.168.229.2
+    set service ssh listen-address '192.168.229.10'
+    set system name-server '192.168.229.2'
+    set service ssh listen-address 192.168.229.10
+    commit
+    save
+
+
 ### DHCP Configuration
 ------
     configure 
