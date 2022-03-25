@@ -7,6 +7,9 @@ centos box. After configuring all of these machines we had to configure a WireGu
 ------
 This was a very fun lab and the first time I had set up VM's in this manner. I have never configured VM's to be able to have connectivity to eachother, however I'm glad that we did this lab because it will be very helpful in the future. It will for sure pay off in the future to be able to do this for whatever the situation may call for. 
 
+### VMWare Configuration
+------
+
 ### VyOS Configuration
 ------
     configure
