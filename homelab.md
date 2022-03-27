@@ -144,6 +144,20 @@ Changed Network Adapter 2 to VMnet 5
     commit
     save
     exit
+#### On Kali
+Configure /etc/wireguard/wg0.conf as following
+      
+       [Interface]
+       PrivateKey = clientprivatekey
+       Address = 10.0.99.100/24
+       [Peer]
+       PublicKey = peerpublickey
+       EndPoint = 192.168.229.10:51820
+       AllowedIPs = 10.0.99.1/32, 10.0.5.0/24
+       
+ `sudo wg-quick up wg0`
+ 
+       
     
     ### Vulnerable Centos Configuration
     ------
@@ -194,4 +208,7 @@ On Centos Command Line:
 `chmod +x vmware-install.pl`
 `./vmware-install.pl`
 
+Follow all defaults  
+Once finsished, shutdown and follow the same cloning steps as the VyOS machine.   
+Ensure that the clone is on VMnet5  
 
