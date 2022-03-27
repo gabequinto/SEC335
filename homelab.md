@@ -22,6 +22,10 @@ IP Address: 10.0.5.0 Subnet mask: 255.255.255.0 VMnet Information: Host-only
 
 ###### VMnet8 
 Subnet IP Address: 192.168.229.0 Subnet Mask: 255.255.255.0  
+
+![git](https://user-images.githubusercontent.com/78443183/160292773-f6137d10-a598-4943-b283-a9c1d3641ab4.PNG)
+
+
 ### VyOS Configuration
 ------
     configure
