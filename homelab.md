@@ -41,8 +41,8 @@ Subnet IP Address: 192.168.229.0 Subnet Mask: 255.255.255.0
     save
 
 
-### DHCP Configuration
-------
+###### DHCP Configuration on Vyos
+
     configure 
     set service dhcp-server global-parameters 'local-address 10.0.5.2;'
     set service dhcp-server shared-network-name DHCPPOOL authoritative
