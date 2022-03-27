@@ -158,9 +158,8 @@ Configure /etc/wireguard/wg0.conf as following
  `sudo wg-quick up wg0`
  
        
-    
-    ### Vulnerable Centos Configuration
-    ------
+### Vulnerable Centos Configuration
+------
 #### Startup Configuration
 
 ###### Operating System
