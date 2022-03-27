@@ -81,6 +81,20 @@ Default Login: vyos:vyos
     delete interfaces ethernet eth0 hw-id
     commit
     save
+    poweroff
+    
+###### Creating Base Snapshot
+Navigate to Settings>CD/DVD     
+Select 'Use a physical drive:'     
+Ensure 'Connect at power' is not selected    
+Take Snapshot  
+Navigate to Manage>Clone  
+Select 'An existing snapshot (powered off only)  
+On following page select 'Create a linked clone'
+
+###### Clone Hardware Changes
+Changed Network Adapter 2 to VMnet 5  
+
 ###### Network Configuration Commands
     configure
     set interfaces ethernet eth0 address '192.168.229.10/24'
@@ -130,3 +144,54 @@ Default Login: vyos:vyos
     commit
     save
     exit
+    
+    ### Vulnerable Centos Configuration
+    ------
+#### Startup Configuration
+
+###### Operating System
+Linux: Centos 6 64-bit
+###### Name
+centos6.5-base
+
+###### Disk Size
+20 GB
+
+###### Hardware 
+Memory: 1 GB  
+Processors: 1  
+CDROM: Centos ISO Image  
+Network Adapter: VMnet 5  
+
+####### Boot Configuration  
+Follow defaults unless specified otherwise below:  
+Hostname Centos    
+Installation Type: Use All Space    
+Install: Web Server and select 'customize now'  
+On customization page select: 'Development tools', 'Server Platform Development'    
+Once finished, reboot    
+
+Once rebooted:  
+
+`sudo vi /etc/sysconfig/network-scripts/ifcfg-eth0`  
+
+Delete HWADDR, change ONBOOT from no to yes, delete UUID  
+`:wq`  
+
+`rm 70-persistent-net.rules`
+
+###### Install VMWare Tools  
+Navigate to VM>Install VMWare Tools   
+Select Install  
+
+On Centos Command Line:    
+`mount /dev/cdrom /mnt`    
+`cd /mnt`  
+`cp VMwareTools=10.3.23-17030940.tar.gz /tmp`  
+`cd /tmp`  
+`tar xf VMwareTools=10.3.23-17030940.tar.gz`  
+`cd vmware-tools-distrib/`  
+`chmod +x vmware-install.pl`
+`./vmware-install.pl`
+
+
