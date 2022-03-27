@@ -51,6 +51,37 @@ Choose: Clone from current state
 Name: Kali-lab  
 ### VyOS Configuration
 ------
+
+#### Startup Configuration
+###### Operating System
+Linux: Debian 10.x 64-bit
+
+###### Name
+vyos-base
+
+###### Disk Size
+8 GB
+
+###### Hardware 
+Memory: 1 GB  
+Processors: 1  
+CDROM: vyos ISO image  
+Network Adapter: NAT  
+Network Adapter 2: NAT  
+ 
+###### Boot Configuration
+Default Login: vyos:vyos  
+`install image`   
+ Follow defaults after running the above command
+ Set password    
+ 
+###### Clear HW-ID
+    configure
+    delete interfaces ethernet eth1 hw-id
+    delete interfaces ethernet eth0 hw-id
+    commit
+    save
+###### Network Configuration Commands
     configure
     set interfaces ethernet eth0 address '192.168.229.10/24'
     set interfaces ethernet eth0 description 'Nat on VMware Host'
