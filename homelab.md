@@ -7,9 +7,21 @@ centos box. After configuring all of these machines we had to configure a WireGu
 ------
 This was a very fun lab and the first time I had set up VM's in this manner. I have never configured VM's to be able to have connectivity to eachother, however I'm glad that we did this lab because it will be very helpful in the future. It will for sure pay off in the future to be able to do this for whatever the situation may call for. 
 
-### VMWare Configuration
-------
+### Virtual Network Editor
+-------
+In order to complete this lab, we had to create four new network adapters. They are configured as follows:
 
+###### VMnet 4
+IP Address: 10.0.4.0 Subnet mask: 255.255.255.0 Vmnet Information: Host-only
+
+###### VMnet 5
+IP Address: 10.0.5.0 Subnet mask: 255.255.255.0 Vmnet Information: Host-only
+
+###### VMnet 6 
+IP Address: 10.0.5.0 Subnet mask: 255.255.255.0 VMnet Information: Host-only
+
+###### VMnet8 
+Subnet IP Address: 192.168.229.0 Subnet Mask: 255.255.255.0  
 ### VyOS Configuration
 ------
     configure
