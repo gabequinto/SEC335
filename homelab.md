@@ -25,7 +25,30 @@ Subnet IP Address: 192.168.229.0 Subnet Mask: 255.255.255.0
 
 ![git](https://user-images.githubusercontent.com/78443183/160292773-f6137d10-a598-4943-b283-a9c1d3641ab4.PNG)
 
+### Kali Configuration
+------
+###### Operating System
+Linux: Ubuntu 64-bit
 
+###### Name
+kali-base
+
+###### Disk Size
+40 GB
+
+###### Hardware 
+Memory: 4 GB
+Processors: 2
+CDROM: Kali ISO image
+Network Adapter: NAT
+
+###### Startup Configuration  
+Follow defaults unless otherwise specified below  
+Username: deployer (this was for this lab but can be anything)  
+STOP at 'finish the installation' and power off VM  
+Navigate to Manage>Clone   
+Choose: Clone from current state  
+Name: Kali-lab  
 ### VyOS Configuration
 ------
     configure
