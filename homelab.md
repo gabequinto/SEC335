@@ -73,7 +73,7 @@ Network Adapter 2: NAT
 Default Login: vyos:vyos  
 `install image`   
  Follow defaults after running the above command
- Set password    
+    
  
 ###### Clear HW-ID
     configure
