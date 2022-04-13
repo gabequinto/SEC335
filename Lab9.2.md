@@ -28,7 +28,7 @@ Now all that is left is to SSH into the system and cat the root and user flag. T
 
 ##### Cat of User Flag
 
-### Sysadmin Mitigations
+### Sys-admin Vulnerability Mitigations
 ------
 The main steps that a sysadmin could take to mitigate this from happening is to block sql injection. If sqli was not allowed than we would not have been able to log into the website as a regular user, admin user, or display the hash of the admin password. Some methods that could be used are input validation in which a sysadmin would whitelist input's so only certain inputs are allowed or parametrized queries which pre-compile statements and the user just has to enter the parameters in order for the statements to be finished. These are just two options but there are many more that will help mitigate against sqli attacks.
 
