@@ -6,7 +6,8 @@ I was able to find the IP address using a reverse-dns lookup using NMap. The com
 
 ### Open Ports
 -------
-I found the open ports as well as services running and their versions using the command `sudo nmap --top-ports 100 -A 10.0.5.31` as seen in the screenshot below. 
+I found the open ports as well as services running and their versions using the command `sudo nmap --top-ports 100 -A 10.0.5.31` as seen in the screenshot below.
+
 ![open ports](https://user-images.githubusercontent.com/78443183/163453120-ba8882a4-932b-4170-b428-2251a052a5ad.PNG)
 
 ### Discovered Vulnerablilties / Achieving a Foothold
