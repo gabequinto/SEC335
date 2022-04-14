@@ -12,16 +12,22 @@ I found the open ports as well as services running and their versions using the 
 
 ### Discovered Vulnerablilties / Achieving a Foothold
 ------
-I found the vulnerability when looking at the website that was running on the server. When you navigate to the IP address you are met with a login screen. I was able to login when I entered `a' OR '1'='1` into the login box as seen below.  
+I found the vulnerability when looking at the website that was running on the server. When you navigate to the IP address you are met with a login screen. I was able to login when I entered `a' OR '1'='1` into the login box as seen below.    
+
+![foothold](https://user-images.githubusercontent.com/78443183/163469159-75314d3a-7521-48dd-a59b-bd5266ac4066.PNG)
 
 
 ### Root Comprimise
 -------
-With a little research, I was able to find that there was an admin page to this website at the address `https://10.0.5.31/entrance_exam/admin/`. I was able to login by entering `admin' OR '1'='1` as a username and '123' as a password. One thing to note is that the password you enter can be anything. 
+With a little research, I was able to find that there was an admin page to this website at the address `https://10.0.5.31/entrance_exam/admin/`. I was able to login by entering `admin' OR '1'='1` as a username and '123' as a password. One thing to note is that the password you enter can be anything.   
+
+![admin login](https://user-images.githubusercontent.com/78443183/163469045-d16b5b3c-679a-4d5c-8af8-57a8588a2f39.PNG)
 
 ##### Finding the Administrator Password
 Follwing this I found through research that there was a way to use sqli to expose the has of the root password. To do this I entered ` https://10.0.5.31/entrance_exam/admin/view_enrollee.php?id=1'+UNION+SELECT+1,2,3,4,5,6,password,username,9,10,11,12,13,14,15+FROM+admin_list;`   
-as seen in the screenshot below. 
+as seen in the screenshot below.   
+
+![admin foothold](https://user-images.githubusercontent.com/78443183/163469101-7e60ebbc-db8c-483c-88a8-51e8ae88fad0.PNG)
 
 With this hash, I used the online hash cracker 'CrackStation' to find the root password as seen below. 
 
@@ -31,8 +37,10 @@ With this hash, I used the online hash cracker 'CrackStation' to find the root p
 Now all that is left is to SSH into the system and cat the root and user flag. The reason that I am making this section is because of one small detail that is needed to ssh into the system. That is, this is a windows box meaning that the username to ssh into is 'Administrator' instead of 'root' as you would on linux boxes. 
 
 ##### Cat of Root Flag
+![rootflag](https://user-images.githubusercontent.com/78443183/163468995-90eeaa06-0c0b-457c-b94c-fbd93bfa9c3c.PNG)
 
 ##### Cat of User Flag
+![userflag](https://user-images.githubusercontent.com/78443183/163469013-eb357570-df5c-4f75-97db-f1b6b2c90b88.PNG)
 
 ### Sys-admin Vulnerability Mitigations
 ------
