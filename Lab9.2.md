@@ -20,7 +20,8 @@ I found the vulnerability when looking at the website that was running on the se
 With a little research, I was able to find that there was an admin page to this website at the address `https://10.0.5.31/entrance_exam/admin/`. I was able to login by entering `admin' OR '1'='1` as a username and '123' as a password. One thing to note is that the password you enter can be anything. 
 
 ##### Finding the Administrator Password
-Follwing this I found through research that there was a way to use sqli to expose the has of the root password. To do this I entered ` https://10.0.5.31/entrance_exam/admin/view_enrollee.php?id=1'+UNION+SELECT+1,2,3,4,5,6,password,username,9,10,11,12,13,14,15+FROM+admin_list;` as seen in the screenshot below. 
+Follwing this I found through research that there was a way to use sqli to expose the has of the root password. To do this I entered ` https://10.0.5.31/entrance_exam/admin/view_enrollee.php?id=1'+UNION+SELECT+1,2,3,4,5,6,password,username,9,10,11,12,13,14,15+FROM+admin_list;`   
+as seen in the screenshot below. 
 
 With this hash, I used the online hash cracker 'CrackStation' to find the root password as seen below. 
 
