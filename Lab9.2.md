@@ -29,8 +29,9 @@ as seen in the screenshot below.
 
 ![admin foothold](https://user-images.githubusercontent.com/78443183/163469101-7e60ebbc-db8c-483c-88a8-51e8ae88fad0.PNG)
 
-With this hash, I used the online hash cracker 'CrackStation' to find the root password as seen below. 
+With this hash, I used the online hash cracker 'CrackStation' to find the root password as seen below.   
 
+![crackstation](https://user-images.githubusercontent.com/78443183/163469547-d6a6250c-8a69-4faa-91ff-6dd4776f8f7f.PNG)
 
 ### SSH into Gloin
 ------
