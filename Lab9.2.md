@@ -1,14 +1,18 @@
 ### Target IP Address 
 -------
-I was able to find the IP address using a reverse-dns lookup using NMap. The command used was `` as seen in the screenshot below. 
+I was able to find the IP address using a reverse-dns lookup using NMap. The command used was `sudo nmap -sL 10.0.5.0/24 --dns-servers 10.0.5.22` as seen in the screenshot below. 
+
+![target ip address](https://user-images.githubusercontent.com/78443183/163453104-a407a61a-df45-450b-9352-6f76f01488de.PNG)
 
 ### Open Ports
 -------
-I found the open ports as well as services running and their versions using the command `` as seen in the screenshot below. 
+I found the open ports as well as services running and their versions using the command `sudo nmap --top-ports 100 -A 10.0.5.31` as seen in the screenshot below. 
+![open ports](https://user-images.githubusercontent.com/78443183/163453120-ba8882a4-932b-4170-b428-2251a052a5ad.PNG)
 
 ### Discovered Vulnerablilties / Achieving a Foothold
 ------
-I found the vulnerability when looking at the website that was running on the server. When you navigate to the IP address you are met with a login screen. I was able to login when I entered `a' OR '1'='1` into the login box as seen below. 
+I found the vulnerability when looking at the website that was running on the server. When you navigate to the IP address you are met with a login screen. I was able to login when I entered `a' OR '1'='1` into the login box as seen below.  
+
 
 ### Root Comprimise
 -------
